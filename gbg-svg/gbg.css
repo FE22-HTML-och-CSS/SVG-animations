@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    background-color: #313131;
+}
+
+svg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+
+/* RECTANGLE */
+
+svg rect {
+    fill: none;
+    stroke: rgb(239, 227, 227);
+    stroke-width: 8px;
+    stroke-dasharray: 1500;
+    stroke-dashoffset: 1500;
+    animation: 10s rect-animation infinite alternate;
+}
+
+@keyframes rect-animation {
+    from {
+        stroke-dashoffset: 1500;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+
+/* LINES */
+
+svg line {
+    stroke: rgb(239, 227, 227);
+    stroke-dasharray: 350;
+    stroke-dashoffset: 350;
+    animation: lines-animation 3s infinite;
+}
+
+@keyframes lines-animation {
+    from {
+        stroke-dashoffset: 350;
+    }
+    to {
+        stroke-dashoffset: -250;
+    }
+}
