@@ -1,0 +1,45 @@
+:root {
+    --primary-color: #111111;
+    --primary-text-color: #fff;
+    --secondary-text-color: rgb(226, 133, 133);
+}
+
+body {
+    margin: 0;
+}
+
+main {
+    color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+
+path {
+    stroke-dasharray: 603;
+    fill: var(--secondary-text-color);
+    animation: draw 6s reverse infinite;
+}
+
+@keyframes draw {
+    0% {
+        stroke-dashoffset: 0;
+    }
+    60% {
+        stroke-dashoffset: -603;
+    }
+    61% {
+        stroke-dashoffset: 0;
+    }
+}

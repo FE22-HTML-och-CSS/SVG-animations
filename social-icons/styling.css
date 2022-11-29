@@ -1,0 +1,79 @@
+:root {
+    --twitter-color: #4099ff;
+    --youtube-color: #F26768;
+}
+
+svg {
+    width: 500px;
+    height: 200px;
+}
+
+.twitter-icon-group:hover,
+.youtube-icon-group:hover,
+.facebook-icon-group:hover {
+    cursor: pointer;
+}
+
+
+/* TWITTER ICON GROUP */
+
+.twitter-outline,
+.twitter-icon {
+    transition: all 0.3s;
+    transform-origin: 23%;
+}
+
+.twitter-icon-group:hover .twitter-outline {
+    transform: scale(0);
+}
+
+.twitter-icon-group:hover .twitter-icon {
+    transform: scale(2);
+    opacity: 0;
+    stroke: var(--twitter-color);
+}
+
+
+/* YOUTUBE ICON GROUP */
+
+.youtube-outline,
+.youtube-inner-circle,
+.youtube-icon {
+    transition: all 0.3s;
+    transform-origin: 50%;
+}
+
+.youtube-icon-group:hover .youtube-outline {
+    transform: scale(1.2);
+}
+
+.youtube-icon-group:hover .youtube-inner-circle {
+    fill: var(--youtube-color);
+}
+
+.youtube-icon-group:hover .youtube-icon {
+    fill: white;
+}
+
+
+/* FACEBOOK ICON GROUP */
+
+.facebook-detail,
+.facebook-outline {
+    transition: all 0.3s;
+    transform-origin: 77%;
+}
+
+.facebook-detail {
+    opacity: 0;
+}
+
+.facebook-icon-group:hover .facebook-outline {
+    transform: scale(1.8);
+    opacity: 0;
+}
+
+.facebook-icon-group:hover .facebook-detail {
+    transform: scale(0.8);
+    opacity: 1;
+}

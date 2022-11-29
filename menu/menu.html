@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./menu.css" rel="stylesheet" type="text/css">
+    <title>MENU</title>
+</head>
+
+<body>
+    <main>
+        <button class="toggle">OPEN</button>
+        <nav>
+            <ul>
+                <li>
+                    <h2>HOME</h2>
+                    <h4>Lorem ipsum dolor sit amet</h4>
+                </li>
+                <li>
+                    <h2>WHAT WE DO</h2>
+                    <h4>Lorem ipsum dolor sit amet</h4>
+                </li>
+                <li>
+                    <h2>WHO WE ARE</h2>
+                    <h4>Lorem ipsum dolor sit amet</h4>
+                </li>
+                <li>
+                    <h2>CONTACT</h2>
+                    <h4>Lorem ipsum dolor sit amet</h4>
+                </li>
+            </ul>
+        </nav>
+        <section>
+            <article>
+                <h1>Hello there</h1>
+                <p>Obi-Wan Kenobi</p>
+            </article>
+        </section>
+    </main>
+    <script>
+        document.querySelector('.toggle')
+            .addEventListener('click', (e) => {
+                document.querySelector('nav').classList.toggle('open')
+            })
+    </script>
+</body>
+
+</html>
