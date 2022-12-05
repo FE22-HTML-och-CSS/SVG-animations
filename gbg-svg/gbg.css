@@ -21,7 +21,7 @@ svg rect {
     stroke-width: 8px;
     stroke-dasharray: 1500;
     stroke-dashoffset: 1500;
-    animation: 10s rect-animation infinite alternate;
+    animation: 5s rect-animation 1 forwards;
 }
 
 @keyframes rect-animation {
@@ -40,14 +40,33 @@ svg line {
     stroke: rgb(239, 227, 227);
     stroke-dasharray: 350;
     stroke-dashoffset: 350;
-    animation: lines-animation 3s infinite;
+    animation: lines-animation 3s 1 forwards;
 }
 
 @keyframes lines-animation {
     from {
-        stroke-dashoffset: 350;
+        stroke-dashoffset: -350;
     }
     to {
-        stroke-dashoffset: -250;
+        stroke-dashoffset: 450;
+    }
+}
+
+
+/* GBG TEXT */
+
+#title path {
+    fill: rgb(239, 227, 227);
+    opacity: 0;
+    animation: text-fade 2s 1 forwards;
+    animation-delay: 3s;
+}
+
+@keyframes text-fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
     }
 }
